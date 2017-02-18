@@ -34,23 +34,20 @@ window.addEventListener('load', function(){
 	}
 
 	function fillNode(name, tel, address, city, state, zip, body){
-		var br = document.createElement("br");
 		var headerName = document.createElement("h2");
 		var p = document.createElement("p");
 		body.appendChild(headerName);
 		headerName.appendChild(name);
 		body.appendChild(p);
-		debugger;
 		p.appendChild(tel);
-		p.appendChild(br);
+		p.appendChild(document.createElement("br"));
 		p.appendChild(address);
-		p.appendChild(br);
+		p.appendChild(document.createElement("br"));
 		p.appendChild(city);
-		p.appendChild(br);
+		p.appendChild(document.createElement("br"));
 		p.appendChild(state);
-		p.appendChild(br);
+		p.appendChild(document.createElement("br"));
 		p.appendChild(zip);
-		debugger;
 	}
 
 	getJSONInfo();
